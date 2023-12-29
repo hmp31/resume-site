@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>My Résumé Website</title>
+	    <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="home.js"></script>
+        <script src="https://kit.fontawesome.com/4eb7f29893.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="header">Harrison Peters</h1>
+            <h2 id="subheading"> Full-Stack Web Developer</h2>
+            
+            <div id="frameworks">
+                <span>RubyOnRails</span>
+                <span class="sep">&#8226;</span>
+                <span>Django</span>
+                <span class="sep">&#8226;</span>
+                <span>Flask</span>
+                <span class="sep">&#8226;</span>
+                <span>React</span>
+                <span class="sep">&#8226;</span>
+                <span>Astro</span>
+                <span class="sep">&#8226;</span>
+                <span>etc</span>
+                
+            </div>
+
+            <span id="text1"></span>
+            <span id="text2"></span>
+            <a href="harrisonResume.pdf" download="harrisonResume.pdf" class="download-button">Resume <i class="fa-solid fa-download"></i></a>
+        </div>
+        
+
+
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                            0 1 0 0 0
+                                            0 0 1 0 0
+                                            0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
+    </body>
+</html>
