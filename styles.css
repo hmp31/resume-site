@@ -3,7 +3,7 @@
 body {
     margin: 0px;
     font-family: "Raleway", sans-serif;
-
+    background-color: antiquewhite;
 }
 
 #container {
@@ -12,9 +12,7 @@ body {
     width: 100vw;
     top: 0;
     bottom: 0;
-
     filter: url(#threshold) blur(0.6px);
-
 }
 
 
@@ -41,9 +39,9 @@ body {
     position: absolute;
     font-size: 15pt;
     top:40%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 #text1,
@@ -63,7 +61,7 @@ body {
     position: absolute;
     font-size: 25pt;
     background-color: black;
-    color: white;
+    color: antiquewhite;
     padding: 12pt;
     border-radius: 50pt;
     text-decoration: none;
@@ -76,4 +74,55 @@ body {
 
 .download-button:hover {
     color: orange;
+}
+
+#links {
+    position: absolute;
+    font-size: 35pt;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+#links a{
+    color: black;
+    transition: 0.3s;
+}
+
+#links a:hover {
+    color: orange;
+}
+
+
+@media only screen and (max-width: 850px) {
+    #header {
+        font-size: 12vw;
+    }
+    
+    #subheading {
+        font-size: 6vw;
+    }
+
+
+    #frameworks {
+        position: absolute;
+        font-size: 6vw;
+        text-align: center;
+        top: 35%;
+    }
+
+    #text1,#text2 {
+        font-size: 15vw;
+    }
+
+    .download-button {
+        font-size: 8vw;
+        padding: 6pt;
+    }
+
+    #links {
+        font-size: 10vw;
+        top: 95%;
+    }
+
 }
